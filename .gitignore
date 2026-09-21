@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.tantei/
+.pi/
+.DS_Store
+coverage/
+.impeccable/
+test-results/
+.playwright-cli/
+artifacts/
+.codebase-memory/
+
+# Local design previews and development records
+mockups/
+output/
+docs/validation.md
+docs/voice-agent-testing-research-2026-09-20.md

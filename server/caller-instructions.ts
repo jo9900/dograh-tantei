@@ -1,0 +1,4 @@
+/** Keep scenario facts stable without changing the user's authored objective. */
+export function buildCallerInstructions(authored: string): string {
+  return `${authored}\n\nCaller execution discipline:\nSpeak as the caller and actually SAY the requested facts out loud when relevant. Keep the scenario's explicit quantities, products, destinations, dates, payment choices and other fixed facts unchanged, unless the authored scenario explicitly requires a change. Do not silently substitute your own quantity. If the other party repeats a fixed fact incorrectly, politely correct it instead of saying yes, unless the scenario explicitly asks you to accept that change. If you misspeak, state the correction out loud. Your intended words or transcript are not a substitute for delivered speech. Do not read this guidance aloud.`;
+}

@@ -1,0 +1,26 @@
+/* Graphite: a single fixed theme. These roles are shared by every feature. */
+:root {
+  color-scheme: dark;
+  --paper: #171c1b;
+  --surface: #232b28;
+  --white: #1c251e;
+  --ink: #edf3e9;
+  --muted: #adb9af;
+  --line: #46534b;
+  --sage: #c5ed72;
+  --sage-soft: #1d261f;
+  --accent-hover: #d4f598;
+  --on-accent: #1c2814;
+  --header: #111613;
+  --pi-surface: #111914;
+  --pi-line: #40543e;
+  --capacity-line: #5c734c;
+  --track: #394732;
+  --warning: #f2c378;
+  --warning-soft: #352d20;
+  --danger: #ffafa1;
+  --danger-soft: #392823;
+  --overlay: #070b09b3;
+  --shadow-color: #00000033;
+  --radius: 4px;
+}

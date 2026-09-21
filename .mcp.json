@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "codebase-memory": {
+      "command": "npm",
+      "args": ["run", "--silent", "memory:serve"]
+    }
+  }
+}

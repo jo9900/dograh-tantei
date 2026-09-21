@@ -1,0 +1,61 @@
+.global-alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  line-height: 1.7;
+  padding: 10px 32px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.global-alert .icon-button {
+  color: var(--danger);
+  flex: 0 0 auto;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  top: 82px;
+  transform: translateX(-50%);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--ink);
+  color: var(--ink);
+  padding: 9px 12px 9px 16px;
+  border-radius: 7px;
+  box-shadow: 0 8px 30px var(--shadow-color);
+  font-size: 12px;
+  max-width: 90vw;
+}
+.toast .icon-button {
+  color: var(--ink);
+  height: 25px;
+  width: 25px;
+}
+.startup {
+  min-height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.startup .brand-mark {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 9px;
+}
+.startup h1 {
+  font-size: 23px;
+  font-weight: 500;
+}
+.startup p {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 8px;
+}

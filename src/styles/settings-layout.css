@@ -1,0 +1,356 @@
+/* Focused settings workspace, matching the approved settings mockup. */
+.workspace-settings {
+  display: block;
+  max-width: 1220px;
+}
+.workspace-settings > .pi-panel,
+.settings-hidden {
+  display: none !important;
+}
+.workspace-settings > .main-content {
+  padding: 46px 44px 90px;
+}
+.settings-redesign {
+  max-width: none;
+}
+.settings-redesign .page-heading {
+  margin-bottom: 34px;
+}
+.settings-redesign .page-heading h1 {
+  font-size: 30px;
+}
+.settings-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 54px;
+}
+.settings-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: start;
+}
+.settings-nav button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  padding: 17px 16px;
+  border: 1px solid transparent;
+  background: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.settings-nav button:hover {
+  background: var(--sage-soft);
+}
+.settings-nav button[aria-current] {
+  background: var(--sage-soft);
+  border-color: var(--line);
+}
+.settings-nav strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+}
+.settings-nav small {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.settings-nav-icon {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  color: var(--sage);
+}
+.settings-state-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--sage);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.settings-state-dot.ready {
+  background: var(--sage);
+}
+.settings-content {
+  min-width: 0;
+  padding-top: 2px;
+}
+.settings-content [hidden] {
+  display: none !important;
+}
+.settings-redesign .settings-section {
+  border: 0;
+  padding: 0;
+}
+.settings-redesign .settings-heading {
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--line);
+  gap: 16px;
+}
+.settings-redesign .settings-heading h2 {
+  font-size: 23px;
+  font-weight: 600;
+}
+.settings-redesign .settings-heading p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.settings-redesign .connection-badge {
+  font-size: 12px;
+  margin-top: 6px;
+}
+.settings-redesign .settings-fields {
+  padding: 28px 0 0;
+}
+.settings-redesign .settings-fields > .field {
+  max-width: none;
+}
+.settings-redesign .field {
+  margin-bottom: 26px;
+}
+.settings-redesign .field-label,
+.settings-field-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+.settings-redesign input,
+.settings-redesign select {
+  font-size: 14px;
+  min-height: 46px;
+  padding: 10px 13px;
+}
+.settings-redesign .field-hint {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 8px;
+}
+.credential-summary {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 76px;
+  padding: 14px 17px;
+  background: var(--sage-soft);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+.credential-summary > svg {
+  color: var(--sage);
+  flex-shrink: 0;
+}
+.credential-summary strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+.credential-summary code {
+  display: block;
+  font-size: 11px;
+  margin-top: 3px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.credential-source {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.settings-help {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: -8px;
+}
+.settings-help summary {
+  cursor: pointer;
+  width: fit-content;
+}
+.settings-help p {
+  margin-top: 12px;
+  max-width: 65ch;
+}
+.settings-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.settings-redesign .button {
+  min-height: 42px;
+  font-size: 13px;
+  padding: 10px 20px;
+}
+.settings-redesign .success-message {
+  font-size: 12px;
+}
+.settings-note {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  margin: -12px 0 26px;
+}
+.settings-short-field {
+  max-width: 310px;
+}
+.settings-redesign .environment-line {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  gap: 10px;
+  margin-bottom: 0;
+}
+.settings-redesign .environment-line strong {
+  font-size: 13px;
+}
+.settings-redesign .environment-line p,
+.environment-detail {
+  font-size: 12px;
+  color: var(--muted);
+}
+.environment-detail {
+  margin-left: auto;
+}
+.settings-redesign .concurrency-input {
+  width: 100px;
+}
+.settings-redesign .storage-note {
+  margin-top: 36px;
+  padding-top: 28px;
+}
+.settings-redesign .storage-note h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.settings-redesign .storage-note code {
+  font-size: 14px;
+}
+.settings-redesign .storage-note p {
+  font-size: 12px;
+}
+.settings-redesign .pi-provider-options {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 24px;
+}
+.settings-redesign .pi-provider-options > button {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0 12px;
+  margin-bottom: -1px;
+  color: var(--muted);
+}
+.settings-redesign .pi-provider-options > button.selected {
+  border-bottom-color: var(--sage);
+  color: var(--sage);
+  background: none;
+}
+.settings-redesign .pi-provider-options strong {
+  font-size: 14px;
+}
+.settings-redesign .pi-provider-options > button.selected strong {
+  font-weight: 600;
+}
+.settings-redesign .pi-codex-connection strong {
+  font-size: 14px;
+}
+.settings-redesign .pi-codex-connection p {
+  font-size: 12px;
+}
+.settings-redesign .model-picker {
+  border: 0;
+  margin-top: 28px;
+  padding: 0;
+}
+.settings-redesign .pi-apply-row {
+  margin-top: 30px;
+}
+.settings-redesign .model-hint {
+  font-size: 12px;
+  margin: 0;
+}
+.settings-redesign .pi-current-model {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 28px 0 0;
+  padding: 22px 0 0;
+  font-size: 12px;
+}
+.settings-redesign .pi-current-model > p {
+  font-size: 12px;
+}
+@media (max-width: 800px) {
+  .workspace-settings > .main-content {
+    padding: 30px 22px 60px;
+  }
+  .settings-layout {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 26px;
+  }
+  .settings-nav button {
+    padding: 14px 10px;
+    gap: 10px;
+  }
+  .credential-source {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .workspace-settings > .main-content {
+    padding: 26px 18px 50px;
+  }
+  .settings-redesign .page-heading {
+    margin-bottom: 24px;
+  }
+  .settings-redesign .page-heading h1 {
+    font-size: 25px;
+  }
+  .settings-layout {
+    display: block;
+  }
+  .settings-nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3px;
+    margin-bottom: 28px;
+  }
+  .settings-nav button {
+    display: block;
+    text-align: center;
+    padding: 11px 2px;
+  }
+  .settings-nav strong {
+    font-size: 12px;
+  }
+  .settings-nav small,
+  .settings-nav-icon,
+  .settings-state-dot {
+    display: none;
+  }
+  .settings-redesign .settings-heading {
+    padding-bottom: 20px;
+  }
+  .settings-redesign .settings-heading h2 {
+    font-size: 22px;
+  }
+  .settings-redesign .settings-heading p {
+    font-size: 13px;
+  }
+  .settings-redesign .settings-fields {
+    padding-top: 24px;
+  }
+  .settings-redesign .pi-provider-options {
+    gap: 20px;
+  }
+  .settings-redesign .pi-provider-options strong {
+    font-size: 13px;
+  }
+}

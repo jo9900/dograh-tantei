@@ -1,0 +1,15 @@
+# App credentials and call evidence are never code-index inputs.
+.env
+.env.*
+.pi/
+.tantei/
+.codebase-memory/
+.venv/
+node_modules/
+dist/
+artifacts/
+test-results/
+.playwright-cli/
+*.wav
+*.pcm
+*.jsonl

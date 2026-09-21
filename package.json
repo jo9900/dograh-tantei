@@ -1,0 +1,47 @@
+{
+  "name": "dograh-tantei",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dograh Tantei: local voice agent testing with GPT-Live 1 and Pi",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "tsx server/index.ts --dev",
+    "build": "vite build",
+    "prestart": "npm run build",
+    "start": "tsx server/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "setup:audio": "node scripts/setup-audio.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "memory:index": "node scripts/codebase-memory.mjs index",
+    "memory:status": "node scripts/codebase-memory.mjs status",
+    "memory:architecture": "node scripts/codebase-memory.mjs architecture",
+    "memory:serve": "node scripts/codebase-memory.mjs serve"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "0.86.0",
+    "express": "5.2.1",
+    "lucide-react": "^0.468.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "codebase-memory-mcp": "0.11.0",
+    "prettier": "3.9.8",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "vite": "8.3.0",
+    "vitest": "^4.1.0"
+  }
+}

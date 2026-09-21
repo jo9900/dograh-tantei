@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.venv/
+.env
+.env.*
+.tantei/
+.pi/
+.codebase-memory/
+.impeccable/
+test-results/
+artifacts/
+.playwright-cli/
+coverage/
+package-lock.json

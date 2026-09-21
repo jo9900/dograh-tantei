@@ -1,0 +1,6 @@
+# npm resolves this project's package root even when Codex starts in a subdirectory.
+[mcp_servers.codebase-memory]
+command = "npm"
+args = ["run", "--silent", "memory:serve"]
+startup_timeout_sec = 120
+tool_timeout_sec = 120

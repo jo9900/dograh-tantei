@@ -1,0 +1,122 @@
+.app-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  padding: 0 32px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 25px;
+  letter-spacing: -0.8px;
+  border: 0;
+  background: none;
+  padding: 6px 0;
+}
+.brand > span:last-child {
+  display: flex;
+  gap: 13px;
+  align-items: baseline;
+}
+.brand-chinese {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+.brand-mark {
+  width: 35px;
+  height: 35px;
+  background: var(--ink);
+  color: var(--paper);
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+}
+.primary-nav {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+  gap: 29px;
+}
+.primary-nav button {
+  font-size: 13px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  padding: 0 2px;
+  color: var(--muted);
+}
+.primary-nav button.active {
+  color: var(--ink);
+  border-bottom-color: var(--sage);
+  font-weight: 600;
+}
+.primary-nav button:hover {
+  color: var(--sage);
+}
+.header-end {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.local-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+}
+.local-indicator > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+.local-indicator.online > span {
+  background: var(--sage);
+}
+.mobile-pi,
+.mobile-pi-close {
+  display: none !important;
+}
+.workspace-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  max-width: 1780px;
+  margin: 0 auto;
+  min-height: calc(100dvh - 70px);
+}
+.main-content {
+  min-width: 0;
+  padding: 35px 38px 24px;
+}
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.page-heading h1 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+.page-heading p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 7px;
+}

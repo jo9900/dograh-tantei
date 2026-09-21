@@ -1,0 +1,110 @@
+/* The selected Graphite surface treatment; all layout stays in feature styles. */
+:root {
+  color: var(--ink);
+  background: var(--paper);
+}
+::selection {
+  color: var(--on-accent);
+  background: var(--sage);
+}
+.app-header {
+  background: var(--header);
+}
+.brand {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-weight: 650;
+}
+.brand-mark {
+  background: var(--sage);
+  color: var(--on-accent);
+  border-radius: 3px;
+}
+.button.primary,
+.send-button {
+  color: var(--on-accent);
+  border-radius: 3px;
+}
+.button.primary:hover:not(:disabled),
+.send-button:hover:not(:disabled) {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+.send-button.stop {
+  background: var(--warning);
+}
+.capacity,
+.capacity-card {
+  background-color: var(--sage-soft);
+  background-image:
+    linear-gradient(#abc98b08 1px, transparent 1px),
+    linear-gradient(90deg, #abc98b08 1px, transparent 1px);
+  background-size: 20px 20px;
+  border-color: var(--capacity-line);
+  border-radius: 4px;
+}
+.capacity-copy h2 strong {
+  color: var(--sage);
+}
+.capacity-slots i {
+  background: var(--track);
+  border-radius: 1px;
+}
+.capacity-slots i.occupied {
+  background: var(--sage);
+}
+.task-card {
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 #d2e6c414;
+}
+.task-card:hover {
+  border-color: var(--sage);
+  box-shadow: 0 6px 20px var(--shadow-color);
+}
+.task-card-progress-label {
+  border-top: 1px dashed var(--line);
+  padding-top: 14px;
+  margin-top: auto;
+}
+.task-card-goal {
+  margin-bottom: 22px;
+}
+.pi-panel {
+  background: var(--pi-surface);
+  border-color: var(--pi-line);
+}
+.pi-input-box,
+.chat-message.user p {
+  background: var(--white);
+  border-color: var(--pi-line);
+}
+.pi-input-box:focus-within {
+  border-color: var(--sage);
+}
+.pi-symbol,
+.pi-line-art,
+.empty-path {
+  color: var(--sage);
+}
+.pi-ready.ready,
+.local-indicator.online > span {
+  background: var(--sage);
+}
+.toast {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.toast .icon-button {
+  color: var(--ink);
+}
+.summary-brief,
+.credential-summary {
+  background: var(--sage-soft);
+}
+.settings-redesign .settings-nav button[aria-current] {
+  border-color: var(--capacity-line);
+}
+.audio-block,
+.recording-player {
+  color-scheme: dark;
+}
